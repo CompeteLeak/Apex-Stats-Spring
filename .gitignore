@@ -1,0 +1,48 @@
+# Ignore secrets
+src/main/resources/secrets.yml
+
+# Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build output
+target/
+build/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# IDEs
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Help file
+HELP.md
+.gitattributes
+.metadata/
