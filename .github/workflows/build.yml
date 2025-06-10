@@ -20,3 +20,5 @@ jobs:
         distribution: 'temurin' # Temurin = OpenJDK build
     - name: Build with Maven
       run: mvn -B package --file pom.xml # Build the project with Maven
+    - name: Test with Maven
+      run: mvn test
