@@ -1,0 +1,22 @@
+name: Smooth Criminal's Java CI with Maven
+
+on: # This triggers the workflow
+  push:
+    branches: [ main ] # Run on every push to `main`
+  pull_request:
+    branches: [ main ] # Also run on PRs into `main`
+
+jobs:
+  build: 	# This job is called "build"
+
+    runs-on: ubuntu-latest  # GitHub will spin up a clean Ubuntu VM
+
+    steps: # Steps inside the job
+    - uses: actions/checkout@v4 # Check out your repo code
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin' # Temurin = OpenJDK build
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml # Build the project with Maven
