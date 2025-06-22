@@ -7,9 +7,10 @@ import com.legends.apexapi.services.ApexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+ 
 @RestController
 @RequestMapping("/api/apex")
+@CrossOrigin(origins ="http://localhost:5173")
 public class PlayerController {
 
     private final ApexService apexService;
